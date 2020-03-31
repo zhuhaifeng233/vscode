@@ -1,0 +1,159 @@
+body{
+    padding: 0;
+    font-size: 10pt;
+}
+
+.topmenu{
+    display: block;
+    width: 220px;
+    border: 2px solid #e4393c;
+    margin: 0;
+    padding: 0;
+}
+
+.toptitle{
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    font-size: 11pt;
+    font-weight: bold;
+    color: white; 
+    background-color:#e4393c;
+    padding-left: 20px;
+}
+
+.topmenu li{
+    height: 30px;
+    line-height: 30px;
+    font-size: 11pt;
+    list-style-type: none;
+    padding-left: 8px;
+    /* z-index用于堆叠的作用，index越大，在堆叠最上方 */
+    z-index: 3;
+    background-image: url(img/1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.topmenu li a{
+    text-decoration: none;
+    color: #313131;
+}
+
+.topmenu li a:hover{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.topmenu li:hover{
+    border: 1px solid #dddddd;
+    border-right: 0;
+    box-shadow: 0 0 8px #dddddd;
+    -moz-box-shadow: 0 0 8px #dddddd;
+    -webkit-bpx-shadow: 0 0 8px #dddddd;
+    background-image: none;
+}
+
+.submenu{
+    display: none;
+    width: 715px;
+    left: 220px;
+    top: 40px;
+    position: absolute;
+    border:1px solid #dddddd;
+    z-index: 4;
+    background: white;
+    box-shadow: 0 0 8px #dddddd;
+    -moz-box-shadow: 0 0 8px #dddddd;
+    -webkit-bpx-shadow: 0 0 8px #dddddd;
+}
+
+.leftdiv{
+    float: left;
+    width: 490px;
+    margin: 5px;
+}
+
+.rightdiv{
+    float: left;
+    width: 200px;
+    margin: 5px;
+}
+
+.topmenu li:hover .submenu{
+    display: block;
+}
+
+.topmenu li:hover span{
+    background: white;
+    display: inline-block;
+    z-index: 20;
+    width: 20px;
+    height: 30px;
+    float: right;
+    position: relative;
+}
+
+.leftdiv dl{
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 6px;
+    overflow: hidden;
+}
+
+.leftdiv dl dt{
+    display: block;
+    float: left;
+    width: 60px;
+    text-align: right;
+    font-size: 10pt;
+    height: 22px;
+    line-height: 22px;
+    padding-right: 6px;
+}
+
+.leftdiv dl dt a{
+    color:#e4393c;
+    font-size: 1opx;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.leftdiv dl dd{
+    display: block;
+    overflow: hidden;
+
+}
+
+.leftdiv dl dd a{
+    display: block;
+    float: left;
+    font-size: 9pt;
+    height: 14px;
+    line-height: 14px;
+    border-left: 1px solid #eeeeee;
+    padding: 0 8px;
+    margin: 4px 0;
+}
+
+.rightdiv dl dd{
+    margin: 3px 0;
+}
+
+.rightdiv dl dt{
+    color: #e4393c;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.rightdiv dl dd a{
+    font-size: 9px;
+    color: #773377;
+    line-height: 22px;
+}
+
+.rightdiv dl dd a:hover{
+    color: #773377;
+    font-weight: normal;
+}
